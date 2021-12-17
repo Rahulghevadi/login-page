@@ -1,13 +1,111 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.row{
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-between;
+  background-color: chocolate;
+}
+.block{
+  background-color:darkcyan; 
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.row.center{
+    text-align: center;
+}
+
+.row1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot{
+    display:flex;
+    justify-content: space-between;
+}
+
+.main-footer{
+    padding-top: 100px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Sign-container{
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Log-container{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.row2{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-footer{
+    flex: 1;
+    padding-bottom: 100px;
+}
+
+
+
+///
+body{
+ background-color:darkolivegreen;
+}
+
+.slider{
+    border-radius: 20px;
+  position: relative;
+  height: 100vx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image{
+    padding-top: 50px;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color:black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color:black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide{
+  opacity:0;
+  transition-duration: 1s ease;
+}
+
+.slide.active{
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+
 }
