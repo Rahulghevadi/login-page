@@ -7,3 +7,9 @@ body{
     justify-content: center;
 }
 
+.app-col2{
+    background-size: cover;
+  background: url(/home/rahul/projects/capstone/login_page/public/Images/bgimage.jpg);
+  border-radius: 20px;
+
+}

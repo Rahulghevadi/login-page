@@ -60,6 +60,8 @@
     text-align: center;
     justify-content: center;
     border-radius: 20px;
+    background-size: cover;
+    
 }
 
 
@@ -102,4 +104,6 @@ img{
   height: 100px;
   width: 100px;
 }
+
+
 
